@@ -227,13 +227,13 @@ section{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 220px;
+        width: 200px;
         height: 40vh;
         background: #4d9559;
         display: flex;
         align-items: center;
         flex-direction: column;
-        padding: 50px 30px;
+        padding: 50px 20px;
         transition: all .55s ease;
 
 
@@ -252,13 +252,5 @@ section{
     .hero-img img{
         width: 100%;
         height: auto;
-        margin-top: -50%;
     }
-.hero-text a.ctaa{
-   margin-left: 40%;
-position: absolute;
-bottom: 44%;
-right: 8%;
-width: 48%;
-}
 }
