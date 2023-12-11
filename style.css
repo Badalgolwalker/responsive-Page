@@ -1,0 +1,256 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'popins',sans-serif;
+text-decoration: none;
+list-style: none;
+}
+
+html, body {
+height: 100%;
+width: 100%;
+/* background-color: red; */
+}
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+z-index: 1000;
+width: 100%;
+    align-items: center;
+justify-content: space-between;
+padding:33px 9%;
+background: transparent;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    margin-left: 60px;
+    color: #fff;font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent ;
+    transition: all ease .55cs;
+}
+.navlist a:hover{
+    border-bottom: 2px solid #fff ;
+
+}
+
+#menu-icon{
+    color: #fff;
+    font-size: 35px;
+    z-index: 1000;
+    cursor: pointer;
+    display: none;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(245.59deg,rgb(121, 121, 3), rgba(92, 86, 1, 0.973),rgba(61, 50, 1, 0.973));
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    grid-area: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+.hero-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.hero-text h1{
+    font-family: 'Permanent Marker',cursive;
+    font-size: 90px;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 45px;
+}
+.hero-text h4{
+  
+    font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.hero-text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.9;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.hero-img img{
+    width: 700px;
+    height: auto;
+}
+.hero-text a{
+    display: inline-block;
+    color: #fff;
+    background: #0ed32f;
+    border: 1px solid transparent;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+    
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    transform: translate(8px);
+}
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid #fff;
+margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icons{
+    position: absolute;
+    top: 50%;
+    padding: 0 9%;
+    transform: translateY(-50%);
+}
+.icons i{
+    display: block;
+    margin: 26px 0;
+    font-size: 24px;
+    color: #fff;
+    transition: all .55s ease;
+}
+.icons i:hover{
+    color: #4d9559;
+    transform: translate(-5px);
+}
+.scroll-down{
+    position: absolute;
+    bottom: 6%;
+    right: 9%;
+}
+.scroll-down i{
+    display: block;
+    padding: 12px;
+    font-size: 25px;
+    color: #fff;
+    background: #4d9559;
+    border-radius: 30px;
+    transition: all .55s ease;
+}
+.scroll-down i:hover{
+    transform: translateY(-5px);
+}
+@media (max-width:1535px) {
+    header{
+        padding: 15px 30px;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .scroll-down{
+        right: 3%;
+        transition: .2s;
+    }
+}
+@media (max-width:1460px) {
+section{
+    padding: 0 12%;
+    transition: .2%;
+}
+}
+@media (max-width:1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+ 
+} 
+@media (max-width:1195px) {
+section{
+    padding: 0 10%;
+}
+.hero-text{
+    padding: 115px 0;
+}
+.hero-img{
+    text-align: center;
+}
+.hero-img img{
+    height: auto;
+    width: 560px;
+}
+.hero{
+    height: 100%;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+}
+.icons{
+    display: none;
+}
+.scroll-down{
+    display: none;
+}
+}
+@media (max-width:990px) {
+
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 300px;
+        height: 40vh;
+        background: #4d9559;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+
+
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 10px 0;
+      
+    }
+    .navlist{
+            right: 0%;
+    }
+}
+@media (max-width:680px) {
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
