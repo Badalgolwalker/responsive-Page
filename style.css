@@ -227,7 +227,7 @@ section{
         position: absolute;
         top: 100%;
         right: 0;
-        width: 270px;
+        width: 220px;
         height: 40vh;
         background: #4d9559;
         display: flex;
@@ -245,12 +245,20 @@ section{
       
     }
     .navlist{
-            right: 0%;
+            right: -50%;
     }
 }
 @media (max-width:680px) {
     .hero-img img{
         width: 100%;
         height: auto;
+        margin-top: -50%;
     }
+.hero-text a.ctaa{
+   margin-left: 40%;
+position: absolute;
+bottom: 44%;
+right: 8%;
+width: 48%;
+}
 }
