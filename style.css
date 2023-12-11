@@ -10,6 +10,7 @@ list-style: none;
 html, body {
 height: 100%;
 width: 100%;
+overflow: hidden;
 /* background-color: red; */
 }
 header{
@@ -64,6 +65,7 @@ background: transparent;
 }
 section{
     padding: 0 19%;
+    overflow: hidden;
 }
 .hero-text h5{
     font-size: 14px;
@@ -205,6 +207,7 @@ section{
 .hero-img img{
     height: auto;
     width: 560px;
+  
 }
 .hero{
     height: 100%;
@@ -252,5 +255,6 @@ section{
     .hero-img img{
         width: 100%;
         height: auto;
+        margin-top: -20%;
     }
 }
