@@ -258,12 +258,17 @@ section{
         margin-top: -50%;
     }
     .hero-text a.ctaa{
-margin-left: 6%;
+margin-left: 2%;
+padding: 10px 16px;
 position: absolute;
 /* top: 48%; */
       
     }
     .navlist{
         width: 180px;
+    }
+    section{
+        padding: 0 5%;
+
     }
 }
