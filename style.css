@@ -255,6 +255,15 @@ section{
     .hero-img img{
         width: 100%;
         height: auto;
-        margin-top: -20%;
+        margin-top: -50%;
+    }
+    .hero-text a.ctaa{
+margin-left: 6%;
+position: absolute;
+/* top: 48%; */
+      
+    }
+    .navlist{
+        width: 180px;
     }
 }
